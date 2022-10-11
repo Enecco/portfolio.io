@@ -1,0 +1,23 @@
+{
+  "work": [
+    {
+      "date": "December 2020 - September 2022",
+      "title": "Apprentice IT Developer at WE NOV",
+      "description": "WE NOV is a startup providing IT services located in Eysines, 33320 in France. \n\nIt was created in 2018 within the Origines holding company (formerly CS Investissment).",
+      "stack": [
+        "Ionic",
+        "Angular",
+        "Node.js",
+        "npm",
+        "Git",
+        "GitHub",
+        "Agile",
+        "SCRUM",
+        "MongoDB",
+        "JavaScript",
+        "TypeScript",
+        "HTML5/CSS3"
+      ]
+    }
+  ]
+}
