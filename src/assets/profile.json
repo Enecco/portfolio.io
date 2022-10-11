@@ -1,0 +1,39 @@
+{
+  "email": "eneccojacobelli@gmail.com",
+  "location": "Le Gosier, Guadeloupe",
+  "name": "Enecco Jacobelli",
+  "phone": "06 28 54 07 69",
+  "avatar": "assets/media/images/enecco.jpg",
+  "education": [
+    {
+      "title": "French HS diploma, Science major",
+      "meta": "Dominique Savio High School, city of Douala, Cameroon, Sept 2018 – Jun 2019"
+    },
+    {
+      "title": "Preparatory year in Digital School",
+      "meta": "IIM, Pole Leonardo da Vinci, La Défense, 92060 Paris, Sept 2019 – Jul 2020"
+    },
+    {
+      "title": "Level 5 RNCP title (Bachelor in computer development)",
+      "meta": "CESI Ravezie, 33300 Bordeaux, Oct 2020 – Sept 2022"
+    }
+  ],
+  "about": "I consider myself a value adder. I resolute to being a key asset of objective teams while seeking value from colleagues to add to my strengths. I love computer science and information technology.\n\nI have acquired experience building industry standard, production ready applications from working as a full time software developer and being a full time technology hobbyist.",
+  "socials": [
+    {
+      "name": "eneccojacobelli@gmail.com",
+      "link": "mailto:eneccojacobelli@gmail.com",
+      "icon": "fa fa-envelope"
+    },
+    {
+      "name": "Github",
+      "link": "https://github.com/Enecco",
+      "icon": "fab fa-github"
+    },
+    {
+      "name": "LinkedIn",
+      "link": "https://www.linkedin.com/in/enecco-jacobelli-6a4b82241/",
+      "icon": "fab fa-linkedin"
+    }
+  ]
+}
