@@ -1,12 +1,12 @@
 {
   "projects": [
     {
-      "preview": "assets/media/projects/nuisinovFront.jpg",
+      "preview": "assets/media/images/nuisinovFront.jpg",
       "name": "NUISINOV (Desktop)",
       "description": "I contributed to the creation of the NUISINOV project within the WE NOV company. \n\n NUISINOV is defined in a set of two management applications (Desktop and Mobile) intended for companies in the pest control sector. \n\n The desktop part allows the user to plan interventions in a schedule and to manage the creation of contracts, sites and customers."
     },
     {
-      "preview": "assets/media/projects/nuisinovMobile.jpg",
+      "preview": "assets/media/images/nuisinovMobile.jpg",
       "name": "NUISINOV (Mobile)",
       "description": "I contributed to the creation of the NUISINOV project within the WE NOV company. \n\n NUISINOV is defined in a set of two management applications (Desktop and Mobile) intended for companies in the pest control sector. \n\n The mobile part is intended for technicians who are in the field, in connection with the desktop application, it will allow them to validate in real time all the stages of the progress of the intervention on which they are."
     }
