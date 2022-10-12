@@ -59,12 +59,12 @@ export class HomeComponent implements OnInit {
   }
 
   async downloadResume(): Promise<void> {
-    const byteCharacters = atob(this.CV.resume);
+    const byteCharacters = atob(this.CV);
     const byteNumbers = new Array(byteCharacters.length);
     for (let i = 0; i < byteCharacters.length; i++) {
       byteNumbers[i] = byteCharacters.charCodeAt(i);
     }
-    const byteArray = new Uint16Array(byteNumbers);
+    const byteArray = new Uint8Array(byteNumbers);
     const file = new Blob([byteArray], { type: 'application/pdf;base64' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(file);
