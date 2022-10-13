@@ -1,6 +1,8 @@
 import { DataApiService } from './../../services/http/data-api.service';
 import { Component, OnInit, HostListener } from '@angular/core';
 
+declare var require: any
+const FileSaver = require('file-saver');
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -50,19 +52,28 @@ export class HomeComponent implements OnInit {
 
   }
 
-  async downloadResume(): Promise<void> {
-    const pdf: any =  await this.dataApi.getBase64CV();
-    const byteCharacters = atob(pdf.resume);
-    const byteNumbers = new Array(byteCharacters.length);
-    for (let i = 0; i < byteCharacters.length; i++) {
-      byteNumbers[i] = byteCharacters.charCodeAt(i);
-    }
-    const byteArray = new Uint8Array(byteNumbers);
-    const file = new Blob([byteArray], { type: 'application/pdf;base64' });
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(file);
-    a.setAttribute('download', `${this.profile.name} CV.pdf`.replace(/\s/g, ''));
-    a.click();
+  // async downloadResume(): Promise<void> {
+  //   const pdf: any =  await this.dataApi.getBase64CV();
+  //   const byteCharacters = atob(pdf.resume);
+  //   const byteNumbers = new Array(byteCharacters.length);
+  //   for (let i = 0; i < byteCharacters.length; i++) {
+  //     byteNumbers[i] = byteCharacters.charCodeAt(i);
+  //   }
+  //   const byteArray = new Uint8Array(byteNumbers);
+  //   const file = new Blob([byteArray], { type: 'application/pdf;base64' });
+  //   const a = document.createElement('a');
+  //   a.href = URL.createObjectURL(file);
+  //   a.setAttribute('download', `${this.profile.name} CV.pdf`.replace(/\s/g, ''));
+  //   a.click();
+  // }
+
+  downloadPdf(pdfUrl: string, pdfName: string ) {
+    //const pdfUrl = './assets/sample.pdf';
+    //const pdfName = 'your_pdf_file';
+    FileSaver.saveAs(pdfUrl, pdfName);
   }
 
+  openDoc(pdfUrl: string, startPage: number ) {
+    window.open(pdfUrl + '#page=' + startPage, '_blank', '');
+  }
 }

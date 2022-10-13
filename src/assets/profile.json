@@ -4,6 +4,12 @@
   "name": "Enecco Jacobelli",
   "phone": "06 28 54 07 69",
   "avatar": "assets/media/images/enecco.jpg",
+  "resume": [
+    {
+      "path": "assets/media/base64/CV_Jacobelli_Enecco.pdf",
+      "name": "CV_Jacobelli_Enecco.pdf"
+    }
+  ],
   "education": [
     {
       "title": "French HS diploma, Science major",

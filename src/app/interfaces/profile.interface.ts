@@ -9,11 +9,16 @@ export interface Profile {
   education: Education[];
   about: string;
   socials: Social[];
+  resume: Resume[];
 }
 
 export interface Education {
   title: string;
   meta: string;
+}
+export interface Resume {
+  path: string;
+  name: string;
 }
 
 export interface Social {

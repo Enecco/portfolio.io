@@ -19,7 +19,16 @@
                       <ng-container *ngFor="let social of profile?.socials">
                         <a  [href]="social?.link" ><span class="mr-2"><i [ngClass]="social?.icon" aria-hidden="true"></i></span>{{social?.name}}</a><br>
                       </ng-container>
-                      <button class="btn btn-primary mt-1" (click)="downloadResume()">Resume<span class="ml-2"><i class="fas fa-cloud-download-alt"></i></span></button>
+                      <div *ngFor="let item of profile?.resume">
+                        <ul>
+                          <li>
+                            <button class="btn btn-success mt-1" (click)="openDoc(item?.path, item?.name)">View<span class="ml-2"><i class="fas fa-cloud-download-alt"></i></span></button>
+                          </li>
+                          <li>
+                            <button class="btn btn-primary mt-1" (click)="downloadPdf(item?.path, item?.name)">Resume<span class="ml-2"><i class="fas fa-cloud-download-alt"></i></span></button>
+                          </li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
                 </div>
